@@ -135,12 +135,12 @@
             //                                    | Shft | space|                            | space |  del |
 
             bindings = <
-      &kp Q       &kp W        &kp E        &kp R        &kp T       &kp T                           &kp Y        &kp U   &kp I       &kp O        &rpi PSCRN P     &kp T 
- &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F        &kp G       &kp T                           &kp H  &mt RSHFT J   &mt RCTRL K &mt RALT L   &mt LGUI SQT     &kp T 
-      &kp Z       &kp X        &kp C        &kp V        &kp B       &kp T                           &kp N        &kp M   &kp COMMA   &kp DOT      &kp FSLH         &kp T 
-    &lt PAD ESC  &lt NAV SPACE  &lt BLU TAB  &rpi &sys_reset LC(LA(DEL))   &rpi &sys_reset C_MUTE    &lt SYM RET  &lt NUM BSPC     &lt PS DEL      &kp T            &kp T 
-                               &kp T        &kp T        &kp T       &kp T                           &kp T        &kp T            &kp T           &kp T 
-                                                         &kp T       &kp T                           &kp T        &kp T 
+    &kp Q       &kp W         &kp E        &kp R                         &kp T                     &kp T                           &kp Y        &kp U               &kp I       &kp O        &rpi PSCRN P      &kp T 
+    &mt LGUI A  &mt LALT S    &mt LCTRL D  &mt LSHFT F                   &kp G                     &kp T                           &kp H        &mt RSHFT J         &mt RCTRL K &mt RALT L   &mt LGUI SQT      &kp T 
+    &kp Z       &kp X         &kp C        &kp V                         &kp B                     &kp T                           &kp N        &kp M               &kp COMMA   &kp DOT      &kp FSLH          &kp T 
+    &lt PAD ESC &lt NAV SPACE &lt BLU TAB  &rpi &sys_reset LC(LA(DEL))   &rpi &sys_reset C_MUTE    &lt SYM RET                     &lt NUM BSPC &lt PS DEL          &kp T                    &kp T 
+                              &kp T        &kp T                         &kp T                     &kp T                           &kp T        &kp T               &kp T                    &kp T 
+                                                                         &kp T                     &kp T                           &kp T        &kp T 
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
