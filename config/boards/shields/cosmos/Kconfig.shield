@@ -1,0 +1,6 @@
+config SHIELD_COSMOS_LEFT
+    def_bool $(shields_list_contains,cosmos_left)
+    select NFCT_PINS_AS_GPIOS
+config SHIELD_COSMOS_RIGHT
+    def_bool $(shields_list_contains,cosmos_right)  
+    select NFCT_PINS_AS_GPIOS

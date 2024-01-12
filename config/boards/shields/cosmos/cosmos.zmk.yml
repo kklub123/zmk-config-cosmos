@@ -1,0 +1,13 @@
+file_format: "1"
+id: cosmos
+name: cosmos
+type: shield
+requires: [seeed_xiao_ble]
+#exposes:
+#  - i2c_oled
+features:
+  - keys
+  - encoder
+siblings:
+  - cosmos_left
+  - cosmos_right
