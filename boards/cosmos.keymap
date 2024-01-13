@@ -94,7 +94,7 @@
     };
 };
 
-/ {
+/ { /*
     behaviors {
         pht: positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -116,7 +116,7 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
-    };
+    };*/
 
     keymap {
         compatible = "zmk,keymap";
