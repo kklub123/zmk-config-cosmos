@@ -18,7 +18,7 @@
     tapping-term-ms = <180>;
 };
 
-/ {
+/* {
     macros {
         degree_sym: degree_sym {
             compatible = "zmk,behavior-macro";
@@ -80,7 +80,7 @@
             wait-ms = <40>;
         };
     };
-};
+};*/
 
 / {
     combos {
