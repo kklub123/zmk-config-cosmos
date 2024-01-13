@@ -9,13 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
-#define NAV  1
-#define NUM  2
-#define FUN  3
-#define SYM  4
-#define PS   5
-#define BLU  6
-#define PAD  7
+#define fun  1
 
 &mt {
     quick-tap-ms = <100>;
