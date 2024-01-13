@@ -124,7 +124,7 @@
         default_layer {
             //          ------------------------------------------------------------------------------------------------------------
             //          |quiet|!1 f1|@2 f2 |# 3 f3|$ 4 f4|% 5 f5|                                       | 6^ f6 |7&f7  |  8*f8 | 9(f9  |)0 f10|   esc |
-            //          |  ~` |  Q  |  W   |  F   |  P   |  G   |                                       | J     |  L   |  U    |  Y    |  {[  |   ]}  |
+            //          |  ~` |  Q  |  W   |  F   |  P   |  G   |                                       | J     |  L   |  U    |  Y    |  klam| klam  |
             //          |  _- |  A  | R lef|S down| T ri |  D   |                                       | H     |  N   |  E    |  I    |  O   |   ' " |
             //          |macro|  z  |  x   |  C   |  V   |  B   |                                       | K <   |  M > |  =,   |  + .  |  /?  |   \|  |
             //                      | macro| Meta |  back| enter| Shft | space|          | space |  del | fn    |  tab |  Alt  |  ctrl |
