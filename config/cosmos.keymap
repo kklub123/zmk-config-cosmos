@@ -18,7 +18,6 @@
     tapping-term-ms = <180>;
 };
 
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -31,30 +30,7 @@
     };
 };
 
-/ { /*
-    behaviors {
-        pht: positional_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <400>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <1>;    // <---[[the W key]]
-        };
-
-        rpi: require_prior_idle {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            require-prior-idle-ms = <125>;
-            bindings = <&kp>, <&kp>;
-        };
-    };*/
-
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -68,11 +44,11 @@
             //                 
 
             bindings = <
-&mt C_VOLUME_UP K_MUTE  &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt F4 NUMBER_4  &mt F5 NUMBER_5                                                    &mt F6 NUMBER_6  &mt F7 NUMBER_7     &mt F8 NUMBER_8  &mt F9 NUMBER_9  &mt F11 NUMBER_0  &kp ESC
-&mt LGUI LS(GRAVE)      &kp Q            &kp W            &kp F            &kp P            &kp G                                                              &kp J            &kt L               &mt RCTRL U      &mt K_COPY Y     &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp MINUS               &kp A            &kp R            &kp S            &kp T            &kp D                                                              &kp H            &kp N               &kp LS(E)        &mt K_PASTE I    &kp O             &kp SQT
-&kp C_BASS_BOOST        &kp Z            &kp X            &kp C            &kp V            &kp B                                                              &mt LESS_THAN K  &mt GREATER_THAN M  &lt NUM BSPC     &lt PS DEL       &kp SLASH         &kp BSLH
-                                         &kp T            &to 1            &kp BACKSPACE    &kp ENTER        &kp LEFT_SHIFT   &kp SPACE &kp SPACE  &kp DELETE  &kp RCTRL        &kp TAB             &kp RIGHT_ALT    &kp CAPSLOCK
+&mt C_VOLUME_UP K_MUTE  &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt F4 NUMBER_4  &mt F5 NUMBER_5                                      &mt F6 NUMBER_6  &mt F7 NUMBER_7     &mt F8 NUMBER_8  &mt F9 NUMBER_9  &mt F11 NUMBER_0  &kp ESC
+&mt LGUI LS(GRAVE)      &kp Q            &kp W            &kp F            &kp P            &kp G                                                &kp J            &kt L               &mt RCTRL U      &mt K_COPY Y     &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp MINUS               &kp A            &kp R            &kp S            &kp T            &kp D                                                &kp H            &kp N               &kp LS(E)        &mt K_PASTE I    &kp O             &kp SQT
+&kp C_BASS_BOOST        &kp Z            &kp X            &kp C            &kp V            &kp B                                                &mt LESS_THAN K  &mt GREATER_THAN M  &kt EQUAL        &mt PERIOD PLUS  &kp SLASH         &kp BSLH
+                        &kp T            &to 1            &kp BACKSPACE    &kp ENTER        &kp LEFT_SHIFT   &kp SPACE    &kp SPACE  &kp DELETE  &kp RCTRL        &kp TAB             &kp RIGHT_ALT    &kp CAPSLOCK
             >;
 
             sensor-bindings =
@@ -82,17 +58,16 @@
 
         fun {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &kp UP_ARROW    &trans           &trans                                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans                                         &trans  &trans  &trans  &trans  &trans  &trans
-                &trans          &to 0           &trans           &trans   &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans           &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &to 0           &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>,
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
-
     };
 };
