@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
-#define fun  1
+#define fun 1
 
 &mt {
     quick-tap-ms = <100>;
@@ -152,7 +152,6 @@
                 &trans          &to 0           &trans           &trans   &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "fun";
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>,
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
