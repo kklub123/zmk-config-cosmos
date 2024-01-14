@@ -11,8 +11,7 @@
 
 #define BASE 0
 #define fun 1
-#define USB true
-#define ZMK_USB true
+
 
 &mt {
     quick-tap-ms = <100>;
